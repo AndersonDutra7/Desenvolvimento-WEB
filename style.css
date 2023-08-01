@@ -22,7 +22,7 @@ p{
 } */
 
 p{
-    color: blue;
+    color: rgb(53, 53, 59);
     background: linear-gradient(to left, white, gray);
     /* border: 3px solid black; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -35,6 +35,8 @@ p{
     box-shadow: 10px 10px 5px black;
     border-radius: 10px 2px 10px;
     margin: 30px 0;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 b{
@@ -45,7 +47,9 @@ b{
 }
 
 .pai{
-    background-color: cadetblue;
+    justify-content: center;
+    background: linear-gradient(to bottom, cadetblue, white);
+    border: 3px solid black;
     width: 300px;
     height: 500px;
     margin: 10px 10px;
@@ -53,10 +57,10 @@ b{
 }
 
 .filho{
-    background-color: pink;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 10px auto;
+
 }
 
 .texto{
@@ -64,3 +68,9 @@ b{
     text-align: center;
     margin-top: 10px;
 }
+
+.filho img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
