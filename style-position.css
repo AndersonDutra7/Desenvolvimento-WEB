@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    width: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 600px;
+    height: 300vh;
+}
+
+.box{
+    /* position: absolute; */
+    /* top: 0; */
+    /* position: static; */
+    /* top: 0; */
+    /* position: relative; */
+    /* top: 50px; */
+    /* left: 50px; */
+    /* position: fixed; */
+    /* top: 50px; */
+    /* left: 50px; */
+    width: 80px;
+    height: 80px;
+    background-color: red;
+}
+
+.nav{
+    top: 0px;
+    position: sticky;
+    background-color: blue;
+    height: 50px;
+}
