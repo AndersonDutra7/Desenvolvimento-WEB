@@ -1,0 +1,26 @@
+/* *{
+    margin: 0;
+    width: 0;
+    padding: 0;
+} */
+
+.container{
+    text-align: center;
+    margin: 30px auto;
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.box{
+    margin: 0px 30px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.box > img{
+    width: 150px;
+    height: 150px;
+}
