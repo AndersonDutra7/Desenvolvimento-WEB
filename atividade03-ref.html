@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Fotos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery-card {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 10px solid #ccc;
+        }
+
+        .gallery-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gallery-item {
+            flex-basis: 30%;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+        }
+
+        .gallery-legend {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-card">
+        <div class="gallery-title">Galeria de Fotos</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/img01.jpg" alt="Foto 01">
+                <div class="gallery-caption">Foto 01</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/img03.jpg" alt="Foto 02">
+                <div class="gallery-caption">Foto 02</div>
+            </div>
+            <div class="gallery-item">
+                <img class="gallery-image" src="assets/img/img02.jpg" alt="Foto 03">
+                <div class="gallery-caption">Foto 03</div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-legend">Legenda 01</div>
+            <div class="gallery-legend">Legenda 02</div>
+            <div class="gallery-legend">Legenda 03</div>
+        </div>
+    </div>
+</body>
+</html>
