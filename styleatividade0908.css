@@ -5,32 +5,39 @@
 }
 
 .container{
-    width: 90%;
+    width: 100%;
+    max-width: 700px;
     height: 400px;
-    background-color: white;
-    max-width: 500px;
+    background-color: yellow;
     margin: 20px auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-esq{
-    width: 45%;
+    width: 49%;
+    max-width: 500px;
     height: 400px;
     background-color: whitesmoke;
+    margin: 0px 0px;
     display: inline-block;
     position: relative;
-    max-width: 500px;
-    margin: 0px 0px;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-dir{
-    width: 45%;
-    height: 400px;
-    background: linear-gradient(to right, aqua, green);
-    display: inline-block;
-    vertical-align: top;
+    width: 49%;
     max-width: 500px;
-    position: relative;
+    height: 400px;
+    background: linear-gradient(to bottom, aqua, green);
     margin: 0px 0px;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .h2{
@@ -44,36 +51,83 @@
     border-left: 0ch;
     border-right: 0ch;
     margin-left: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 .botão-salvar{
-    width: 100px;
+    width: 60%;
+    max-width: 500px;
     height: 40px;
-    margin-left: 20px;
+    margin: 20px ;
+    text-align: center;
     background-color: orangered;
+    color: white;
     text-transform: uppercase;
     font-weight: bolder;
-    text-align: center;
 }
 
 .botao-facebook{
-    width: 150px;
-    height: 40px;
-    margin: 5px 20px ;
-    text-align: center;
-    position: relative;
+    width: 80%;
     max-width: 500px;
-    background-color: cornflowerblue;
-    /* background-image: url("assets/img/facebook.png"); */
-    /* background-size: cover; */
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #1877F2;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.icone-face{
+    background-color: #1877F2;
+    color: rgb(42, 42, 165);
+    margin-right: 10px;
 }
 
 .botao-twitter{
-    width: 150px;
-    height: 40px;
-    margin: 5px 20px ;
-    text-align: center;
-    position: relative;
+    width: 80%;
     max-width: 500px;
-    /* background-image: url("assets/img/twitter.jpg"); */
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #1DA1F2;
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.icone-twitter{
+    background-color: #1DA1F2;
+    color: white;
+    margin-right: 10px;
+}
+
+.botao-google {
+    width: 80%;
+    max-width: 500px;
+    height: 40px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(17, 226, 226);
+    color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+.icone-google{
+    margin-right: 10px;
+    background-color: rgb(17, 226, 226);
+    color: white;
 }
