@@ -28,6 +28,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    transform: scale(1.09);
     font-size: 24px;
     display: none;
   }
@@ -64,6 +65,7 @@ body {
 
     .botao-menu{
         display: flex;
+        transform: scale(1.09);
     }
 
     .navbar-logo{
