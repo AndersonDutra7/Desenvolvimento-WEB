@@ -58,32 +58,44 @@ body {
 @media(max-width: 500px){
     .navbar{
         width: auto;
-        height: 80px;
+        height: auto;
         margin: 30px 30px 30px;
         padding: 20px 20px;
+        display: flexbox;
     }
 
     .botao-menu{
         display: flex;
-        transform: scale(1.09);
+        margin-top: -210px;
     }
 
     .navbar-logo{
-        width: auto;
-        height: 190px;
+        margin-top: -195px;
     }
+
     .navbar-links{
-        display: none;
+        margin-top: 500px;
+        margin-left: -200px;
+        position: relative;
         flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        background-color: #3e5066;
-        width: 100%;
-        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        background-color: #577292;
+        padding: 10px 10px;
+    }
+
+    .navbar-links li {
+        margin: 20px 20px;
+        /* padding: auto; */
+    }
+
+    .navbar-links a {
+        margin: 50px 50px;
+        text-decoration: none;
+        color: white;
     }
 
     .navbar-links.active {
-        display: flex; /* Mostrar opções quando o botão é clicado */
+        display: flex;
     }
 }
