@@ -20,6 +20,7 @@ body{
     padding: 10px 20px;
     text-transform: uppercase;
     border: 2px solid white;
+    margin: 2px;
 }
 
 .logo > img{
@@ -81,6 +82,7 @@ tr:hover{
 
 .footer{
     background-color: #3e5066;
+    border-top: 2px solid white;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -88,22 +90,47 @@ tr:hover{
     bottom: 0;
 }
 
-.about{
-    height: 100vh;
+section{
+    /* height: 100vh; */
+    height: auto;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
-.contact{
-    height: 100vh;
+section > h1{
+    background-color: #3e5066;
+    padding: 10px;
+}
+
+section > p{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
 }
 
 .pagination{
-    background-color: brown;
+    background-color:  #121212;
     text-align: center;
+    justify-content: center;
     display: flex;
-    border: 2px solid white;
-    margin: 500px;
+    position: relative;
+    margin: 500px auto 50px auto;
     border-radius: 20px;
+    padding: 10px;
+}
 
+.pagination > li > a{
+    border: 2px solid white;
+    background-color: #3e5066;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.pagination > li > a:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 @media(max-width: 640px){
