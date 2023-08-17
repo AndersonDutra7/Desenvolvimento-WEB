@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: rgba(105, 64, 64, 0.281);
+}
+
+.container{
+padding: 30px;
+}
+
+.card{
+    background-color: white;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin:10px;
+    transition: .5s;
+}
+
+.picture{
+    width: 100%;
+}
+
+.title{
+    position: relative;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+}
+
+.title:hover{
+    background-color: pink;
+    transition: .5s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}
+
+.ffa-regular {
+    position: relative;
+    right: 50px;
+}
+
+.desconto{
+    position: relative;
+}
+</style>
+
+ <body>
+    <div class="container">
+        <div class="card">
+            <img class="picture" src="/assets/img/pug.PNG" alt="">
+            <h2 class="title">Bolos</h2>
+            <p class="valor"></R1>R$ 20,00</R1></p>
+            <p class="desconto"> Desconto 2%</p>
+            <p class="description">Bolo de chocolate.</p>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-solid fa-star">
+            </i>
+        </div>
+        <div class="card">
+            <img class="picture" src="/assets/img/pug.PNG" alt="">
+            <h2 class="title">Cafe</h2>
+            <p class="valor"></R1>R$ 8,00</R1></p>
+            <p class="desconto"> Desconto 1%</p>
+            <p class="description">Cafe expresso.</p>
+            <i class="fa-regular fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+    </div>
+</body>
+</html>
