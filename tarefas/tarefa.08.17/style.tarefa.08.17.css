@@ -7,11 +7,11 @@
     list-style: none;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .navbar{
-    display: flex;
+    display: flexbox;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -20,37 +20,49 @@
     margin: 2px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo > img{
-    width: 205px;
-    height: 50px;
+    width: 30%;
     object-fit: cover;
-    align-items: left;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.logo > i{
+    text-align: center;
+    color: #1c417b;
+    text-transform: none;
+    font-weight: bold;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .nav-menu{
     display: flex;
-    gap: 100%;
+    justify-content: space-between;
+    gap: 65%;
     list-style: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 
+.links-esq{
+    display: flex;
+    position: relative;
+    gap: 20px;
+}
+
+.links-dir{
+    display: flex;
+    gap: 20px;
+}
+
 .nav-link:hover{
-    transition: .5s;
-    padding: 10px 18px;
-    background-color: #1c417b;
-    border-radius: 12px;
-}
-
-.nav-icons{
-    font-size: 22px;
-}
-
-.nav-icons > i{
-    margin: 10px;
-}
-
-.nav-icons:hover{
     transition: .5s;
     padding: 10px 18px;
     background-color: #1c417b;
@@ -65,8 +77,9 @@
 }
 
 .container-estoque{
+    right: 20px;
     width: 100%;
-    margin: 8%;
+    margin: 3%;
 }
 
 div > h1{
@@ -79,6 +92,17 @@ div > h1{
     background-color: #3e5066;
     border: 5px solid #1c417b;
     border-radius: 20px;
+}
+
+.endereco{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px auto;
+
 }
 
 .card{
@@ -118,37 +142,30 @@ div > h1{
     transform: scale(1.09);
 }
 
-.table{
-    background-color: #606060;
-    width: 90%;
-    max-width: 800px;
-    margin: 50px auto;
+.paginacao{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
     text-align: center;
-    border-collapse: collapse;
-    border-radius: 6px 6px 0 0;
-    overflow: hidden;
-    border: 2px solid white;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin: auto auto 50px auto;
+    padding: 10px;
 }
 
-.table > thead{
+.pag-item{
     background-color: #3e5066;
-    color: white;
+    border: 2px solid #1c417b;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: underline;
 }
 
-.table > tbody > tr > td{
-    padding: 16px;
-}
-
-.table > tbody > tr:nth-of-type(even){
-    background-color: black;
-
-}
-
-tr:hover{
-    opacity: 0.5;
+.pag-item:hover{
+    opacity: 0.8;
     cursor: pointer;
 }
-
 .footer{
     background-color: #1c417b;
     border-top: 2px solid white;
@@ -159,16 +176,212 @@ tr:hover{
     bottom: 0;
 }
 
+.botao-home {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    padding: 20px 20px;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-left: 10px;
+    background-size: 100%;
+    background-position: center center;
+    background-image: url(botao-globo.jpg)
+}
+
+.botao-home:hover {
+    background-color: transparent;
+    color: #1c417b;
+    transition: 0.5s;
+}
+
+.tabela{
+    background-color: #a18f8f;
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #1c417b;
+}
+
+.tabela > thead{
+    background-color: #3e5066;
+    border: 5px solid #1c417b;
+}
+
+.tabela > tbody > tr > td{
+    padding: 16px;
+}
+
+.tabela > tbody > tr:nth-of-type(even){
+    background-color: whitesmoke;
+
+}
+
+tr:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* header {
+    background-color: #1c417b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+} */
+
+/* header h1 {
+    font-size: 36px;
+} */
+
+/* main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.sumario {
+    display: flexbox;
+    justify-content: center;
+    background-color: yellow;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+}
+
+.sumario-item {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos da tabela de dados de vendas */
+.dados-vendas {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);
+}
+
+.dados-vendas > h2 {
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tabela-vendas {
+    width: 100%;
+}
+
+.tabela-vendas th, .tabela-vendas td {
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-th{
+    background-color: #1c417b;
+    color: white;
+}
+
 @media(max-width: 640px){
+
+    *{
+        max-width: 100%;
+        max-height: 100%;
+        font-size: 80%;
+    }
+
+    .navbar{
+        max-width: 100%;
+        font-size: 200%;
+    }
+    
+    .logo {
+        max-width: 100%;
+    }
+    
+    .logo > i{
+        font-size: 80%;
+    }
+
     .nav-menu{
-        font-size: small;
+        font-size: 200%;
+        gap: 10%;
+    }
+    
+    .container{
+        display: block;
+        font-size: 500%;
+    }
+    
+    .container-estoque{
+        max-width: 100%;
+        font-size: 500%;
+    }
+    
+    div > h1{
+        font-size: 500%;
+    }
+    
+    .endereco{
+        max-width: 60%;
+        font-size: 98%;
+        text-align: left;
+        margin: 5% 20% 5% 2%;
     }
 
-    .logo{
-        max-width: 10%;
+    .footer{
+        font-size: 180%;
+        max-width: 25%;
+        margin-bottom: 0px;
+        right: 0px;
+    }
+    
+    .botao-home {
+        max-width: 30%;
+        font-size: 80%;
+        margin-bottom: 10px;
+        right: 12px;
     }
 
-    .nav-icons{
-        font-size: small;
+    .paginacao{
+        margin-left: -80px;
+    }
+    
+    .pag-item{
+        max-width: 100%;
+        font-size: 200%;
+    }
+
+    .table{
+        background-color: #606060;
+        width: 90%;
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+        border-collapse: collapse;
+        border-radius: 6px 6px 0 0;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    
+    .table > thead{
+        background-color: #3e5066;
+        color: white;
+    }
+    
+    .table > tbody > tr > td{
+        padding: 16px;
+    }
+    
+    .table > tbody > tr:nth-of-type(even){
+        background-color: black;
+    
+    }
+    
+    tr:hover{
+        opacity: 0.5;
+        cursor: pointer;
     }
 }
