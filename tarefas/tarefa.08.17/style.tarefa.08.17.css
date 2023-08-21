@@ -18,6 +18,7 @@
     text-transform: uppercase;
     border: 5px solid #1c417b;
     margin: 2px;
+    max-width: 100%;
 }
 
 .logo {
@@ -74,12 +75,14 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
+    max-width: 100%;
 }
 
 .container-estoque{
     right: 20px;
     width: 100%;
     margin: 3%;
+    max-width: 100%;
 }
 
 div > h1{
@@ -187,7 +190,7 @@ div > h1{
     margin-left: 10px;
     background-size: 100%;
     background-position: center center;
-    background-image: url(botao-globo.jpg)
+    background-image: url(_imagens/botao-globo.jpg)
 }
 
 .botao-home:hover {
@@ -315,9 +318,13 @@ tr:hover{
         display: block;
         font-size: 500%;
     }
+
+    .container > .picture{
+        height: 400px;
+        width: 800px;
+    }
     
     .container-estoque{
-        max-width: 100%;
         font-size: 500%;
     }
     
@@ -326,16 +333,16 @@ tr:hover{
     }
     
     .endereco{
-        max-width: 60%;
-        font-size: 98%;
+        max-width: 100%;
         text-align: left;
         margin: 5% 20% 5% 2%;
+        font-size: 300%;
     }
 
     .footer{
         font-size: 180%;
         max-width: 25%;
-        margin-bottom: 0px;
+        bottom: 0px;
         right: 0px;
     }
     
@@ -348,41 +355,11 @@ tr:hover{
 
     .paginacao{
         margin-left: -80px;
+        margin-bottom: 0px;
     }
     
     .pag-item{
         max-width: 100%;
         font-size: 200%;
-    }
-
-    .table{
-        background-color: #606060;
-        width: 90%;
-        max-width: 800px;
-        margin: 50px auto;
-        text-align: center;
-        border-collapse: collapse;
-        border-radius: 6px 6px 0 0;
-        overflow: hidden;
-        border: 2px solid white;
-    }
-    
-    .table > thead{
-        background-color: #3e5066;
-        color: white;
-    }
-    
-    .table > tbody > tr > td{
-        padding: 16px;
-    }
-    
-    .table > tbody > tr:nth-of-type(even){
-        background-color: black;
-    
-    }
-    
-    tr:hover{
-        opacity: 0.5;
-        cursor: pointer;
     }
 }
