@@ -10,6 +10,10 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+.interface{
+    width: 2000px;
+}
+
 .navbar{
     display: flexbox;
     justify-content: space-between;
@@ -17,7 +21,7 @@
     padding: 10px 20px;
     text-transform: uppercase;
     border: 5px solid #1c417b;
-    margin: 2px;
+    margin: 3px;
     max-width: 100%;
 }
 
@@ -40,7 +44,6 @@
     text-transform: none;
     font-weight: bold;
     font-size: larger;
-    font-weight: bold;
 }
 
 .nav-menu{
@@ -74,15 +77,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
     max-width: 100%;
 }
 
 .container-estoque{
-    right: 20px;
-    width: 100%;
-    margin: 3%;
+    padding: 20px;
     max-width: 100%;
+    border-bottom: 5px solid black;
 }
 
 div > h1{
