@@ -10,10 +10,6 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-.interface{
-    width: 2000px;
-}
-
 .navbar{
     display: flexbox;
     justify-content: space-between;
@@ -84,7 +80,8 @@
 .container-estoque{
     padding: 20px;
     max-width: 100%;
-    border-bottom: 5px solid black;
+    text-align: center;
+    margin-bottom: 160px;
 }
 
 div > h1{
@@ -100,6 +97,7 @@ div > h1{
 }
 
 .endereco{
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -148,13 +146,14 @@ div > h1{
 }
 
 .paginacao{
+    background-color: white;
     font-family: 'Titillium Web', sans-serif;
     font-weight: bold;
     text-align: center;
     justify-content: center;
     display: flex;
     position: relative;
-    margin: auto auto 50px auto;
+    margin-bottom: 0;
     padding: 10px;
 }
 
@@ -172,13 +171,17 @@ div > h1{
     cursor: pointer;
 }
 .footer{
-    background-color: #1c417b;
-    border-top: 2px solid white;
+    background-color: white;
+    border-top: 5px solid black;
     text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.footer > p{
+    background-color: #1c417b;
 }
 
 .botao-home {
@@ -337,7 +340,7 @@ tr:hover{
     .endereco{
         max-width: 100%;
         text-align: left;
-        margin: 5% 20% 5% 2%;
+        margin-bottom: 0;
         font-size: 300%;
     }
 
