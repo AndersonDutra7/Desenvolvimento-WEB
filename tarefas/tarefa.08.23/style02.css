@@ -1,0 +1,58 @@
+/* Estilos globais */
+body {
+    max-width: 800px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso centraliza verticalmente na página */
+    margin: 0;
+}
+
+/* Estilizando o header */
+header {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Estilizando o main */
+main {
+    background-color: red;
+    padding: 10px;
+    width: 100%;
+    max-width: 800px; /* Largura máxima para o conteúdo */
+    display: flex;
+    flex-direction: row; /* Alinha os elementos lado a lado */
+    justify-content: space-between; /* Espaço entre os elementos no main */
+    position: relative;
+}
+
+/* Estilizando as seções (superior e inferior) */
+section {
+    background-color: red;
+    padding: 10px;
+    flex: 1; /* Ocupa o espaço igualmente dentro do main */
+}
+
+/* Estilizando o aside (sidebar) */
+aside {
+    background-color: red;
+    padding: 10px;
+    width: 200px; /* Largura fixa para a barra lateral */
+    border: 5px solid blue;
+}
+
+/* Estilizando o footer */
+footer {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

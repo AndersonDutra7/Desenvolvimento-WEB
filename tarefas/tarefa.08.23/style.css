@@ -9,15 +9,16 @@
 }
 
 body{
-    width: 1000px;
-    background-color: aliceblue;
-    display: flexbox;
+    width: 70%;
+    position: relative;    
+    background-color: white;
+    border: 5px solid blue;
 }
 
-nav, footer{
+.nav, .footer{
     background-color: red;
     padding: 15px;
-    margin: 15px 15px;
+    margin: 15px 15px 15px 15px;
 }
 
 p {
@@ -26,42 +27,55 @@ p {
 
 main{
     display: flex;
-    flex-direction: row;
+    border: 5px solid green;
+}
+
+.lado-esq{
+    background-color: white;
+    flex: 2;
 }
 
 .superior{
-    display: inline;
-    width: 550px;
-    height: 200px;
+    width: 100%;
+    height: 35%;
     float: left;
-    background-color: red;
+    background-color: white;
     padding: 15px;
     margin: 15px 15px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: start;
 }
 
 .superior > p{
+    width: 100%;
+    height: 80%;
     padding: 15px;
     margin: 15px 15px;
-    border: 5px solid black;
+    justify-content: start;
+    flex: 1;
 }
 
 .inferior{
-    width: 550px;
-    height: 350px;
+    width: 100%;
+    height: 80%;
     float: left;
     background-color: red;
-    display: block;
     padding: 15px;
-    margin: 15px 15px;
+    margin: 15px 15px 15px;
 }
 
 .aside{
+    flex: 1;
     display: block;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 80%;
     float: right;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
     background-color: red;
     padding: 15px;
-    margin: 15px 15px;
+    margin: 15px 15px 15px 15px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
