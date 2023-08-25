@@ -11,9 +11,9 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 2.5fr 5fr 2.5fr;
+    grid-template-rows: 5fr 5fr;
     grid-template-areas: 
-    "header header"
+    "aside main"
     "aside main"
     "footer footer"
 }
