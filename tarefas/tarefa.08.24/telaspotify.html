@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="spotify.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Tela Spotify</title>
 </head>
 <body>
     <div class="containerSpot">
-        <header class="asideHeader">
-            <button><i class="fa fa-home" aria-hidden="true"></i>Inicio</button><br>
-            <button><i href="#" class="fas fa-search search-icon" target="blank"></i>Buscar</button>
+        <header class="header-esq">
+            <button><span class="material-symbols-outlined">home</span><p>&nbsp Inicio</p></button><br>
+            <button><span class="material-symbols-outlined">search</span><p>&nbsp Buscar</p></button>
         </header>
         <aside class="aside">
-            <section>
+            <header class="aside-header">
+                <button><span class="material-symbols-outlined">align_justify_flex_start</span><p>&nbsp Sua Biblioteca</p></button>
+                <button class="add"><span class="material-symbols-outlined">add</span></button>
+            </header>
+            <section class="aside-section">
                 <div>
-                <button>Sua Biblioteca</button>
-                <div class="asideFundo">
-                    <h2>Crie sua Playlist</h2>
-                    <p>É facil, vamos te ajudar.</p>
+                    <h2>Crie sua primeira playlist</h2><br>
+                    <p>É facil, vamos te ajudar.</p><br>
                     <button>Criar playlist</button>
                 </div>
-                <div class="asideFundo">
-                    <h2>Que tal seguir um podcast novo?</h2>
-                    <p>Avisaremos você sobre novos pedidos</p>
+                <div>
+                    <h2>Que tal seguir um podcast novo?</h2><br>
+                    <p>Avisaremos você sobre novos episódios</p><br>
                     <button>Explore podcasts</button>
                 </div>
-                <i>Cookies</i><br>
-                <button>Português do Brasil</button>
-                </div>
             </section>
+            <footer class="aside-footer">
+                <a href="#">Cookies</a>
+                <button><span class="material-symbols-outlined">language</span>&nbsp Português do Brasil</button>
+            </footer>
         </aside>
         <main class="main">
                 <nav class="cabecalho">
@@ -62,9 +66,12 @@
             </header>
         </main>
         </div>
-        <footer class="footer">
-            <button>Testar o Premium</button>
-            <button>Inscreva-se grátis</button>
+        <footer class="">
+            <button class="footer-btn">
+                <span class=".span-testar">TESTAR O PREMIUM DE GRAÇA</span> <br>
+                <span>Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.</span>
+                <button class="footer-btn-inscreva">Inscreva-se grátis</button>
+            </button>
         </footer>
 </body>
 </html>
