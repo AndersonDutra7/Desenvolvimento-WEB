@@ -185,12 +185,10 @@ main{
 
 footer{
     grid-area: footer;
-    background-color: black;
 }
 
 footer > .footer-btn{
     width: 100%;
-    text-align: center;
     height: 12vh;
     border: 6px solid black;
     background-image: linear-gradient(to right, #cc2ab1, #558cb1);
@@ -200,15 +198,29 @@ footer > .footer-btn{
     display: block;
 }
 
+.span-testar{
+    color: #558cb1;
+}
+
+.span-testar{
+    color: red;
+}
+
 footer > .footer-btn > span{
-    flex-direction: column;
     font-size: medium;
 }
 
 .footer-btn-inscreva{
     background-color: white;
     color: black;
-    position: fixed;
-    margin-top: -50px;
     float: right;
+    padding: 1%;
+    margin-top: -30px;
+    border-radius: 20px;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.footer-btn > .span-testar{
+    color: #558cb1;
 }
