@@ -16,12 +16,13 @@
     grid-template-columns: 2.5fr 8fr;
     grid-template-rows: 1fr 5fr;
     grid-template-areas: 
-    "asideHeader main"
+    "header-esq main"
     "aside main"
     "footer footer"
 }
 
 .header-esq{
+    grid: header-esq;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(20, 20, 20);
     border-radius: 10px;
@@ -29,7 +30,6 @@
 }
 
 .header-esq > button{
-    grid-area: asideHeader;
     width: 95%;
     border: none;
     border-radius: 10px;
@@ -45,7 +45,8 @@
 
 .header-esq > button > p{
     float: left;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
     margin-top: 2%;
     margin-left: 3%;
 }
@@ -76,7 +77,6 @@ aside{
     background-color: transparent;
     color: rgb(119, 134, 134);
     padding: 3%;
-    font-size: larger;
     display: flex;
     border-radius: 50%;
 }
@@ -89,7 +89,8 @@ aside{
 
 .aside-header > button > p{
     float: left;
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: bold;
     margin-top: 2%;
 }
 
@@ -124,8 +125,8 @@ aside{
 }
 
 .aside-section > div > button{
-    padding: 2%;
-    font-size: 15px;
+    padding: 3%;
+    font-size: 13px;
     font-weight: bolder;
     border-radius: 20px;
     border: none;
@@ -133,11 +134,11 @@ aside{
 
 .aside-section > div > button:hover{
     cursor: pointer;
-    padding: 3%;
+    padding: 4%;
 }
 
 .aside-footer{
-    padding: 5%;
+    padding: 3%;
     margin-top: 5%;
     max-height: 100%;
     background-color: rgb(20, 20, 20);
@@ -155,8 +156,8 @@ aside{
 }
 
 .aside-footer > button{
-    padding: 1%;
-    font-size: 15px;
+    padding: 1px;
+    font-size: small;
     font-weight: bolder;
     border-radius: 20px;
     border: 1px solid white;
@@ -164,30 +165,132 @@ aside{
     background-color: rgb(30, 30,30 );
     display: flex;
     align-items: center;
-    margin-top: 10%;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.aside-footer > button > span{
+    margin: 3px 0px 3px 6px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 .aside-footer > button:hover{
-    padding: 2%;
+    padding: 1%;
     cursor: pointer;
 }
 
-.cabecalho{
+.main-header{
     grid-area: cabecalho;
-    background-color: blue;
+    background-color: rgb(20, 20, 20);
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
+.main-header > .material-symbols-outlined{
+    font-size: 30px;
+    color: rgb(119, 134, 134);
+    background-color: rgb(10, 10, 10);
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.material-symbols-outlined:hover{
+    cursor: not-allowed;
+}
+
+.main-header-dir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 65%;
+    padding: 1px;
+    color: rgb(119, 134, 134);
+    font-size: 16px;
+    font-weight: bolder;
+    max-width: 90%;
+}
+
+.main-header-dir > span > button{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    margin-left: 40px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main-header-dir > span:hover{
+    padding: 1px;    
+    color: white;
+    cursor: pointer;
+}
+
+.main-header-dir > span > button:hover{
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main-section{
     grid-area: main;
-    background-color: green;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    background-color: #cc2ab1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
 }
 
-footer{
-    grid-area: footer;
+.main-playlists{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 2.5fr 8fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "playlist mostrar"
+    "card card"
 }
+
+.play{
+    grid: playlist;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+}
+
+.mostrar{
+    grid: mostrar;
+    font-size: 15PX;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(119, 134, 134);
+    padding: 0px 10px;
+    margin-left: 65%;
+}
+
+.play:hover, .mostrar:hover{
+    text-decoration: underline;
+}
+
+.card{
+    grid-area: card;
+    display: block;
+}
+
+/* footer{
+    grid-area: footer;
+} */
 
 footer > .footer-btn{
+    grid-area: footer;
     width: 100%;
     height: 12vh;
     border: 6px solid black;
