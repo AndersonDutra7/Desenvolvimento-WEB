@@ -1,6 +1,6 @@
 @import url('"https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Multani&family=Roboto&display=swap');
-
+@import url('https://source.unsplash.com/200x200/?Selena');
 *{
     margin: 0;
     padding: 0;
@@ -68,6 +68,7 @@ aside{
 .aside-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .aside-header > button{
@@ -99,8 +100,10 @@ aside{
     cursor: pointer;
 }
 
-.add:hover{
+.add > .material-symbols-outlined:hover{
     background-color: rgb(30, 30,30 );
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .aside-section{
@@ -134,7 +137,7 @@ aside{
 }
 
 .aside-section > div > button:hover{
-    cursor: pointer;
+    cursor: cell;
     padding: 4%;
 }
 
@@ -201,10 +204,12 @@ main{
 }
 
 .main-header > .material-symbols-outlined{
-    font-size: 30px;
     color: rgb(119, 134, 134);
     background-color: rgb(10, 10, 10);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
     margin: 5px;
 }
@@ -241,7 +246,17 @@ main{
     cursor: pointer;
 }
 
-.main-header-dir > span > button:hover{
+.main-header-dir > button{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    margin-left: 40px;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main-header-dir button:hover{
     cursor: pointer;
     font-size: 16px;
 }
@@ -305,6 +320,22 @@ main{
     width: 200px;
 }
 
+.cards > button{
+    background-color: rgb(3, 167, 3);
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    display: none;
+    float: right;
+}
+
+.cards > button > span{
+    color: black;    
+    border-radius: 50px;
+    display: flex;
+    font-size: 50px;
+}
+
 .cards-foto-capa{
     border-radius: 10px;
     max-width: 100%;
@@ -326,6 +357,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: left;
+}
+
+.cards:hover{
+    background-color: rgb(30, 30, 30);
+    cursor: pointer;
 }
 
 footer > .footer-btn{
