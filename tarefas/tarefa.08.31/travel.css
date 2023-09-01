@@ -111,31 +111,66 @@ body{
     border: none;
 }
 
-.main-ofers{
-    width: 50%;
+main {
     display: flex;
-    justify-content: space-between;
+    max-width: 100%;
+    justify-content: center;
     align-items: center;
-    float: left;
-    padding: 20px;
-    font-size: 20px;
 }
 
-.main-ofers > div{
+.main-ofers{
+    width: 80%;
+    /* gap: 10%; */
+    /* padding: 20px; */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid red; */
+}
+
+.main-ofers > h1, .main-ofers > h3{
+    /* width: 100%; */
+    padding: 1%;
+}
+
+.foto-main-ofers{
+    /* border: 5px solid green; */
+    /* padding: 1%; */
     display: grid;
     grid-template-columns: 4fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    grid-template-areas: 
+    grid-template-rows: 4fr;
+    grid-template-areas:
     "fotoMaster foto1 foto2"
     "fotoMaster foto3 foto4"
 }
 
 .fotoMaster{
     grid-area: fotoMaster;
-    /* max-width: 100%; */
+    width: 100%;
+    padding: 1%;
+    /* height: 100%; */
 }
 
 .foto1{
     grid-area: foto1;
     max-width: 100%;
+    padding: 1%;
+}
+
+.foto2{
+    grid-area: foto2;
+    max-width: 100%;
+    padding: 1%;
+}
+
+.foto3{
+    grid-area: foto3;
+    max-width: 100%;
+    padding: 1%;
+}
+
+.foto4{
+    grid-area: foto4;
+    max-width: 100%;
+    padding: 1%;
 }
