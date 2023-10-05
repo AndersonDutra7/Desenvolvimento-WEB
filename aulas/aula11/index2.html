@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="script2.js"></script>
+    <style>
+        .vermelho{
+            background-color: red;
+        }
+
+        .verde{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de Tarefas</h1>
+        <div class="container">
+            <p v-for="informacao in todos" :class="{verde: informacao.completed == true, vermelho: !informacao.completed}"> {{informacao.title}} </p>
+        </div>
+    </div>
+</body>
+</html>
